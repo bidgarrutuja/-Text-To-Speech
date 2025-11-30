@@ -1,5 +1,5 @@
+# Treat all Dart files as Dart
+*.dart linguist-language=Dart
 
-git add .gitattributes
-git commit -m "Force GitHub language stats to Dart only"
-git push origin main
-
+# Treat everything else as vendored
+* linguist-vendored
