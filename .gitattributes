@@ -1,12 +1,12 @@
-# Force Dart language recognition
+# Force all Dart files to be Dart
 *.dart linguist-language=Dart
 
-# Ignore native platform files for language stats
-*.kt linguist-vendored
-*.kts linguist-vendored
-*.swift linguist-vendored
-*.cpp linguist-vendored
+# Ignore build outputs and third-party/vendor files
+build/** linguist-vendored
+ios/Pods/** linguist-vendored
+android/.gradle/** linguist-vendored
+android/app/build/** linguist-vendored
 *.h linguist-vendored
-*.m linguist-vendored
-*.mm linguist-vendored
-*.java linguist-vendored
+*.cpp linguist-vendored
+*.c linguist-vendored
+*.cmake linguist-vendored
