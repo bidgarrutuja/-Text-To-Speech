@@ -1,12 +1,5 @@
-# Force all Dart files to be Dart
-*.dart linguist-language=Dart
 
-# Ignore build outputs and third-party/vendor files
-build/** linguist-vendored
-ios/Pods/** linguist-vendored
-android/.gradle/** linguist-vendored
-android/app/build/** linguist-vendored
-*.h linguist-vendored
-*.cpp linguist-vendored
-*.c linguist-vendored
-*.cmake linguist-vendored
+git add .gitattributes
+git commit -m "Force GitHub language stats to Dart only"
+git push origin main
+
